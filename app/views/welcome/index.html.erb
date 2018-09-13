@@ -1,0 +1,9 @@
+<h1>Sistema Transito Biciusuarios</h1>
+<% if user_signed_in? %>
+    <h3>Bienvenido! <%= current_user.email %> </h3>
+    <div class="row">
+        <%= render @images %>
+    </div>
+<% else %>
+    <p> por favor inicia sesión. </p>
+<% end %>

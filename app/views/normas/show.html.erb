@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @norma.descripcion %>
+</p>
+
+<p>
+  <strong>Img vid:</strong>
+  <%= @norma.img_vid %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @norma.tipo %>
+</p>
+
+<p>
+  <strong>Categoria normas:</strong>
+  <%= @norma.categoria_normas %>
+</p>
+
+<%= link_to 'Edit', edit_norma_path(@norma) %> |
+<%= link_to 'Back', normas_path %>

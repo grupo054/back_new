@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Normas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descripcion</th>
+      <th>Img vid</th>
+      <th>Tipo</th>
+      <th>Categoria normas</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @normas.each do |norma| %>
+      <tr>
+        <td><%= norma.descripcion %></td>
+        <td><%= norma.img_vid %></td>
+        <td><%= norma.tipo %></td>
+        <td><%= norma.categoria_normas %></td>
+        <td><%= link_to 'Show', norma %></td>
+        <td><%= link_to 'Edit', edit_norma_path(norma) %></td>
+        <td><%= link_to 'Destroy', norma, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Norma', new_norma_path %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descripcion: MyString
+  img_vid: MyString
+  tipo: MyString
+  categoria_normas: one
+
+two:
+  descripcion: MyString
+  img_vid: MyString
+  tipo: MyString
+  categoria_normas: two
